@@ -25,9 +25,9 @@ app.use( '*', async ( req, res ) => {
 
     // fetch data of the matched component
     let componentData = null;
-    if( typeof matchRoute.component.fetchData === 'function' ) {
-        componentData = await matchRoute.component.fetchData();
-    }
+    // if( typeof matchRoute.component.fetchData === 'function' ) {
+    //     componentData = await matchRoute.component.fetchData();
+    // }
 
     // read `index.html` file
     let indexHTML = fs.readFileSync( path.resolve( __dirname, '../dist/index.html' ), {
